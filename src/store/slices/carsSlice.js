@@ -14,7 +14,7 @@ const carsSlice = createSlice({
             state.data.push({
                 name: action.payload.name,
                 cost:action.payload.cost,
-                id:nanoid
+                id:nanoid()
             });
         },
         removeCar(state,action){
